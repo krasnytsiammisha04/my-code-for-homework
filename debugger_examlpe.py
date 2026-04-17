@@ -4,8 +4,22 @@
 """
 
 
+def is_odd(number: int) -> bool:
+    """
+    Function that receives a number and returns if it is odd
+    """
+    # if number & 2 != 0:
+    #     return True
+    # else:
+    #     return False
+    return number & 2 != 0
+
+
 # print_odd_numbers
-def print_only_odd_numbers_in_a_list(number_list):
+def print_odd_numbers(number_list: list[int]) -> None:
+    """
+    A function that receives a list of numbers and prints only odd numbers
+    """
     # пройтися по усім числам
     for number in number_list:
         # перевірити чи конкретне число є парнее чи ні
@@ -14,5 +28,8 @@ def print_only_odd_numbers_in_a_list(number_list):
             print(number)
 
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-print_only_odd_numbers_in_a_list(numbers)
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# print_odd_numbers(numbers)
+
+# print(is_odd("Hello"))
+print_odd_numbers({1, 2, 3, 4, 5})
